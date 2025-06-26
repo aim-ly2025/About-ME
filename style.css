@@ -1,0 +1,9 @@
+h2{
+    padding: 20px;
+    background-color: lightblue;
+}
+
+.carousel-caption d-none d-md-block{
+    color:black;
+
+}
