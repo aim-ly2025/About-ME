@@ -8,3 +8,97 @@
 
 }*/
 
+.container{
+    background-color: rgb(146, 240, 240);
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+.h2sections{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    padding: 20px;
+
+}
+
+.experience-section{
+    margin: auto;
+    padding: 50px;
+    margin-left: 350px;
+    margin-right: 350px;
+    background-color: #a4f0f0;
+    border-radius: 20px;
+
+}
+
+.center-intro{
+}
+
+
+/* Apply these styles to ALL captions, not just the active one, if you want consistent centering */
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    max-width: 80%;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Add padding-bottom: 0px !important; if default Bootstrap padding is pushing it up */
+    padding-bottom: 0px !important; /* Ensure it's truly centered, overriding Bootstrap default */
+}
+
+/* Now style the headings and paragraphs within ALL captions consistently */
+.carousel-caption h1,
+.carousel-caption h5 { /* Target both h1 and h5 for consistent heading size */
+    font-size: 3.5rem; /* Make the font size bigger (adjust value as desired) */
+    font-weight: bold; /* Make the font bold */
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+/* Adjustments for smaller screens (apply to all captions) */
+@media (max-width: 767.98px) {
+    .carousel-caption h1,
+    .carousel-caption h5 {
+        font-size: 2rem;
+    }
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}
+/*
+/* To target all regular nav links */
+/* .navbar-nav .nav-link {
+  color: #4704ff; 
+} */
+
+/* To specifically target the active link (which Bootstrap might override) */
+/* .navbar-nav .nav-link.active {
+  color: #16a330 !important; 
+} */
+
+/* To specifically target the disabled link */
+/* .navbar-nav .nav-link.disabled {
+  color: #888888;
+}  */
+
+.navbar-nav .nav-link {
+  color: #000000;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #00ffff; /* Example: a brighter red on hover/focus */
+}
