@@ -12,20 +12,22 @@ An image of you with descriptive alt text
     If you don’t have a LinkedIn account yet, that’s fine, just put an empty link for the moment. (use a hashtag (#) as a placeholder)
 
 In addition, include at least the following styling (CSS):
-5. Different font color, font family, and size
+DONE 5. Different font color, font family, and size
 
-6. 1 imported font, e.g. from Google Fonts (hint: Intro to CSS slides about font-family to see how to import)
+DONE 6. 1 imported font, e.g. from Google Fonts (hint: Intro to CSS slides about font-family to see how to import)
 
-7. A background color on any element
+DONE 7. A background color on any element
 
 8. Adjust the size of an img
 
-9.A use of Bootstrap’s grid layout system
+DONE 9.A use of Bootstrap’s grid layout system
 
-10.At least two Bootstrap components, such as buttons, navbars, list groups, etc.
+DONE 10.At least two Bootstrap components, such as buttons, navbars, list groups, etc.
 
-11.A Bootstrap utility class applied to an HTML element
+DONE 11.A Bootstrap utility class applied to an HTML element
     For example, using class=”text-primary” on a paragraph, or adding a border.
+     Example: " <div class="bg-transparent,card"> <!-- Us a Bootstrap Utility Class-->"
+
 
 If you meet these requirements and have time to spare, you can add as much as you want, including additional styling in your style.css.
 

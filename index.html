@@ -15,17 +15,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
          
     <!-- Navbar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg my-custom-navbar">
     <div class="container-fluid">
         <!--Put a custom logo here MJ or ML-->
-        <a class="navbar-brand" href="#">Mia Ly</a>
+        <a class="navbar-brand" href="#">aiM
+            <span class="fs-4">yL</span>
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">About Me</a>
+            <a class="nav-link" aria-current="page" href="#">About Me</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="#">Experience</a>
@@ -49,24 +51,24 @@
     <div class="carousel-inner">
         <div class="carousel-item active"> <img src="catImg2.avif" class="d-block w-100" alt="cat1">
         <div class="carousel-caption d-none d-md-block">
-            <h1 class="center-intro">Hi my name is Mia Ly!</h5>
-            <p class="center-intro">This is a description for cat 1.</p>
+            <h1 class="center-intro subtle-glow">Hi my name is Mia Ly!</h5>
+            <p class="center-intro subtle-glow">This is a description for cat 1.</p>
         </div>
         </div>
 
         <div class="carousel-item">
         <img src="catImg2Better.jpg" class="d-block w-100" alt="cat2">
         <div class="carousel-caption d-none d-md-block">
-            <h5>Second Cat Image</h5>
-            <p>This is a description for cat 2.</p>
+            <h5 class="center-intro subtle-glow">Second Cat Image</h5>
+            <p class="center-intro subtle-glow">This is a description for cat 2.</p>
         </div>
         </div>
 
         <div class="carousel-item">
         <img src="catImg2.avif" class="d-block w-100" alt="cat3">
         <div class="carousel-caption d-none d-md-block">
-            <h5>Third Cat Image</h5>
-            <p>This is a description for cat 3.</p>
+            <h5 class="center-intro subtle-glow">Third Cat Image</h5>
+            <p class="center-intro subtle-glow">This is a description for cat 3.</p>
         </div>
         </div>
     </div>
@@ -86,8 +88,10 @@
             <img src="catImg1.jpg" class="img-fluid rounded" alt="..."> <!--Scale down image and round corners-->
             </div>
             <div class="col-6">
-            <h2> About me </h2>
-            <h3>By Mia Ly</h3>
+            <h2 id="bio" class="subtle-glow">
+             About <span class="blue-text-glow">Me</span></h2>
+            
+            <p id="name" class="subtle-glow">Mia Ly<p>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> 
             </div>
 
@@ -98,10 +102,10 @@
     <!-- About Me photos-->
 <div class="custom-container-two ">
   <div class="container">
-    <h2 class="h2sections">About Me Photos</h2>
+    <h2 class="h2sections subtle-glow">About Me Photos</h2>
     <div class="row mb-4"> <!-- 1.5rem of margin bottom -->
         <div class="col-md-4 col-sm-6 col-12"> <!-- Sizes: medium sized screens, small sized screens, extra-small screens-->
-            <div class="bg-transparent,card">
+            <div class="bg-transparent,card"> <!-- Us a Bootstrap Utility Class-->
                 <img class="card-img-top" src="robot.JPG" alt="Robot image for card 1">
                 <div class="card-body">
                     <h5 class="card-title">Card Title 1</h5>
@@ -174,7 +178,8 @@
 
 
     <!-- Experience -->
-    <!-- <div class="experience-section">
+     <div class="all-experience">
+    <div class="experience-section">
     <div id="accordion">
         <h2 class="h2sections"> Experience</h2>
         <div class="card">
@@ -221,7 +226,8 @@
             </div>
         </div>
     </div>
-</div> -->
+</div>
+</div>
 
 
     

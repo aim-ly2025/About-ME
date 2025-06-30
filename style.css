@@ -28,6 +28,7 @@
   background: #05143D;
 background: linear-gradient(150deg, rgba(5, 20, 61, 1) 64%, rgba(8, 31, 94, 1) 79%, rgba(10, 38, 118, 1) 88%, rgba(10, 38, 118, 1) 97%);
 */
+padding-bottom: 100px;
 background: rgba(5,20,61,255)/*#030c21*/;
 background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54%, rgba(8, 31, 94, 1) 79%, rgba(10, 38, 118, 1) 88%, rgba(10, 38, 118, 1) 97%);
 }
@@ -76,13 +77,56 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
 
 }
 
+#bio{
+    margin-bottom: 5px;
+    margin-top: 30px;
+    /*padding: 20px;*/
+}
+/*
+#name{
+    font-size: x-large;
+  
+}*/
+
 .experience-section{
     margin: auto;
     padding: 50px;
     margin-left: 350px; 
     margin-right: 350px;
-    background-color: #a4f0f0;
+    background-color: ;
     border-radius: 20px;
+
+}
+.all-experience{
+   background-image:
+        linear-gradient(#081F5E, rgba(0, 0, 0, .7)), /* Black overlay with 50% opacity */
+        url('Images/roboWallpaper2.jpg'); /* Your original image */
+
+    /* --- Essential background properties (from previous answers) --- */
+    background-size: cover;       /* Ensures the image covers the entire area */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    background-attachment: fixed; /* (Optional) Fixes background during scroll */
+
+    /* Add a fallback background color in case the image fails to load */
+    background-color: #333; /* A dark fallback color */
+
+    /* Ensure the element has height for the background to be visible */
+    min-height: 400px; /* Example: adjust as needed */
+  
+    /* --- Vignette Effect on Borders --- */
+    box-shadow:
+        inset 0 0 100px 50px #081F5E; /* Inset shadow for vignette */
+        /*
+        Explanation of values:
+        - inset: Makes the shadow appear inside the element.
+        - 0 0: No horizontal or vertical offset (shadow is centered).
+        - 100px: Blur radius. A larger value creates a softer, more spread-out fade.
+        - 50px: Spread radius. This expands the shadow outwards from the element's edges.
+                A positive value makes the shadow larger; a negative value makes it smaller.
+                We want it to spread inwards from the border.
+        - rgba(51, 0, 51, 0.8): The color (dark purple) and its opacity (80%).
+        */
 
 }
 
@@ -95,8 +139,96 @@ body{
 
 p,h3,h2{
     color: aliceblue;
+  
 }
 
+.my-custom-navbar{
+    background-color: 0; /*maybe leave transparent*/
+}
+.navbar-brand{
+    font-family: 'RoboGirls', sans-serif;
+    font-size: xx-large;
+    /* Your existing styles */
+    border-bottom:#104BEB; /* This sets the color for a border, but not a text glow */
+    border-width: 10px;    /* This sets the width for a border, not a text glow */
+
+    /* --- Text Glow/Fade Border --- */
+    text-shadow:
+        /* Basic glow effect (spread out, same color) */
+        0 0 5px #104BEB,  /* Smallest, brightest glow */
+        0 0 10px #104BEB, /* Medium glow */
+        0 0 20px #104BEB, /* Largest, softer glow */
+
+        /* Optional: Slightly off-center/diagonal "border" effect */
+        /* This creates a more defined edge that mimics a border */
+        5px 7px 0px #00aadd,  /* Shadow slightly down and right, no blur */
+        -5px -7px 3px #00ffff; /* Shadow slightly up and left, no blur, potentially different color */
+        /* You can adjust the pixel values (offset-x offset-y blur-radius color) */
+
+        color: white; /* Ensure text color contrasts with shadow */
+
+}
+
+
+.navbar-nav .nav-link {
+  color: #ebebeb;
+  font-family: 'KernelPanic',sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #00ffff; /* Example: a brighter red on hover/focus */
+}
+
+.center-intro{
+    font-family:'GlitchSlap',sans-serif;
+    
+    /*font-size: larger;
+    font-weight:bolder;*/
+
+}
+
+
+.blue-text-glow{
+  color: #0165ff
+
+;
+
+
+   /* Or any base text color that contrasts well with your shadows */
+    text-shadow:
+        /* Light gray subtle glow */
+        0 0 7px #082575, /* Very subtle, slightly transparent light gray glow */
+        0 0 7px #0c37ad, /* A bit more spread, softer light gray glow */
+
+        /* Black subtle outline/depth (very faint) */
+        1px 1px 5px #09246e,   /* Slightly offset, very small blur, semi-transparent black for depth */
+        -1px -1px 5px #092f96;  /* Opposite offset for balanced subtle effect */
+
+}
+.subtle-glow{
+    color: white; /* Or any base text color that contrasts well with your shadows */
+    text-shadow:
+        /* Light gray subtle glow */
+        0 0 7px rgba(200, 200, 200, 0.7), /* Very subtle, slightly transparent light gray glow */
+        0 0 7px rgba(200, 200, 200, 0.5), /* A bit more spread, softer light gray glow */
+
+        /* Black subtle outline/depth (very faint) */
+        1px 1px 5px rgba(0, 0, 0, 0.3),   /* Slightly offset, very small blur, semi-transparent black for depth */
+        -1px -1px 5px rgba(0, 0, 0, 0.3);  /* Opposite offset for balanced subtle effect */
+}
+h2,h3{
+font-family: 'GlitchSlap', sans-serif; 
+font-weight:bolder;
+font-size: xx-large;
+}
+p{
+  font-family: 'KernelPanic', sans-serif;
+  font-weight:bolder;
+  font-size: x-large;
+}
 
 /* Apply these styles to ALL captions, not just the active one, if you want consistent centering */
 .carousel-caption {
@@ -153,11 +285,81 @@ p,h3,h2{
   color: #888888;
 }  */
 
-.navbar-nav .nav-link {
-  color: #000000;
+
+/* --- GlitchSlap Font --- */
+@font-face {
+  font-family: 'GlitchSlap'; /* Unique name for this font */
+  src: url('fonts/glitch-slap-font/GlitchSlap-R8me.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Recommended for better user experience */
 }
 
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link:focus {
-  color: #00ffff; /* Example: a brighter red on hover/focus */
+/* --- ElectricShocker Font --- */
+@font-face {
+  font-family: 'ElectricShocker'; /* Unique name for this font */
+  src: url('fonts/electric-shocker-font/ElectricShocker-2y8d.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+
+/* --- ChargerStatic Font --- */
+@font-face {
+  font-family: 'ChargerStatic'; /* Unique name for this font */
+  src: url('fonts/charger-static-font/ChargerStatic-KKWe.otf') format('opentype'); /* .otf uses 'opentype' format() */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- Hackout Font --- */
+@font-face {
+  font-family: 'Hackout'; /* Unique name for this font */
+  src: url('fonts/h-hackout-font/Hackout-Eaw5j.otf') format('opentype'); /* .otf uses 'opentype' format() */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- KernelPanic Font --- */
+@font-face {
+  font-family: 'KernelPanic'; /* Unique name for this font */
+  src: url('fonts/kernel-panic-nbp-font/KernelPanicNbp-LyG3.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- RoboGirls Font --- */
+@font-face {
+  font-family: 'RoboGirls'; /* Unique name for this font */
+  src: url('fonts/robo-girls-font/RoboGirls-4BzEB.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* --- Applying the Fonts --- */
+/* You need to decide WHICH font you want to apply to the div */
+/* Or apply different fonts to different elements */
+
+div {
+  /* Only ONE font-family property will be applied. The last one wins. */
+  /* If you want GlitchSlap to be the main font for all divs: */
+  /*font-family: 'KernelPanic', sans-serif;
+
+  /* If you wanted KernelPanic for *all* divs, you'd only list that: */
+  /* font-family: 'KernelPanic', sans-serif; */
+}
+
+/* Examples of applying different fonts to different elements or classes: */
+.glitch-text {
+  font-family: 'GlitchSlap', sans-serif;
+}
+
+.electric-heading {
+  font-family: 'ElectricShocker', cursive; /* Using 'cursive' as a generic fallback */
+}
+/*
+#ElectricShocker p {
+  font-family: 'ElectricShocker', monospace; /* Using 'monospace' as a generic fallback */
