@@ -3,7 +3,7 @@
 3. make a list of my skills under the experience section
 4. setup some github projects links
 7. the contact me section add colorful icons to the accounts 
-8. maybe create a custom logo
+8. maybe create a custom logo (Change it again?)
 9. up to 7 bootstrap elements 
 11. figure out how to add a carousel that moves up and down
 12. for the activies section, create a unique layout 
@@ -12,4 +12,12 @@ Very important:
 1. fix werid jumping when the carousel moves
 2. change margin and padding
 4.fix werid margin on experience section
-5.fix card 3 
+5. resize the images
+
+
+Conditionals: If the screen becomes similar to the phone screen then the image for bio is under the text. might use JS.
+Same goes for experience section so it doesn'y disappear, make it for phone screen
+
+Notes:
+
+the ideal size of cat photo dimensions: 505 × 330
