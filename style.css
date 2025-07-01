@@ -113,6 +113,43 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
 }
 
 
+
+
+
+/*terminal*/
+/* 
+.terminal-header {
+            background-color: #000080; /
+            color: #FFFF00; 
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 8px 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 90%; 
+            max-width: 800px;
+            box-sizing: border-box; 
+            margin: 20px auto; 
+        }
+        .header-item {
+            font-family: 'Inter', sans-serif; 
+            font-size: 1.1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        } */
+        /*
+        .header-item:hover {
+            background-color: rgba(255, 255, 0, 0.2); /* Light yellow hover effect */
+        
+
+
+
+
 /* The .experience-padding class in your original code seems unused or misplaced. */
 /* If you intended to use it for the h2, apply it to the h2 in HTML: */
 /* <h2 class="h2sections experience-padding"> Experience</h2> */
@@ -168,120 +205,7 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
     margin-top: 0;      /* Remove default margin-top from h2 */
     margin-bottom: 30px; /* Add space below the title */
 }
-/*non-functional ternimal*/
 
-/* --- Terminal Navbar Styles (modified to be less conflicting) --- */
-/* --- Terminal Navbar Container (represents the whole window) --- */
-.terminal-navbar {
-    background-color: #000; /* Outer background, slightly darker than screen */
-    width: 100%;
-    /* Optional: Fixed position for a sticky navbar */
-    /* position: fixed; */
-    /* top: 0; */
-    /* left: 0; */
-    /* z-index: 1000; */
-    box-sizing: border-box;
-    padding-top: 0; /* Remove top padding to let window bar sit flush */
-    padding-bottom: 0; /* Remove bottom padding as terminal screen has its own */
-}
-
-/* --- New: Terminal Window Bar (the top bar with controls and title) --- */
-.terminal-window-bar {
-    background-color: #2c2c2c; /* Dark grey, slightly lighter than terminal screen */
-    color: #e0e0e0; /* Light text for title */
-    height: 30px; /* Fixed height for the bar */
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Vertically center items */
-    padding: 0 10px; /* Horizontal padding inside the bar */
-    font-family: sans-serif; /* A more standard font for the title bar text */
-    font-size: 0.9em;
-    border-top-left-radius: 8px; /* Match outer container's top radius if applied */
-    border-top-right-radius: 8px; /* Match outer container's top radius if applied */
-    position: sticky; /* Sticky positioning for the bar within the navbar */
-    top: 0;
-    /* The image has the overall terminal window slightly rounded, so the bar should match. */
-    /* If .terminal-navbar has border-radius, apply it here for top corners. */
-    /* Example: border-top-left-radius: 5px; border-top-right-radius: 5px; */
-}
-
-.terminal-window-controls {
-    display: flex;
-    gap: 6px; /* Space between control buttons */
-    margin-right: 10px; /* Space between controls and title */
-}
-
-.control-btn {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%; /* Make them circular */
-    cursor: default; /* Indicate non-interactable */
-    /* Adjust these colors to match the image's subtle grey controls */
-    background-color: #7d7d7d; /* Grey button color */
-    border: 1px solid #555; /* Subtle border for depth */
-}
-/* You can make them different colors if you want the Mac style */
-/* .close-btn { background-color: #ff5f56; } */
-/* .minimize-btn { background-color: #ffbd2e; } */
-/* .maximize-btn { background-color: #27c93f; } */
-
-
-.terminal-window-title {
-    flex-grow: 1; /* Allows title to take up available space and pushes menu icons to right */
-    text-align: center; /* Center the title text */
-    font-weight: bold;
-    color: #c0c0c0; /* Slightly lighter grey for the title */
-}
-
-.terminal-window-menu-icons {
-    /* Styles for hamburger menu icons or other controls on the right */
-    margin-left: 10px; /* Space from title */
-    color: #c0c0c0; /* Color for any icons */
-    /* Example for adding actual icons (requires icon library or SVG) */
-    /* span { width: 4px; height: 4px; background-color: currentColor; margin-left: 2px; } */
-}
-
-
-/* --- Existing: Terminal Screen (now adjusted for layout) --- */
-/* --- Existing: Terminal Screen (adjusted padding) --- */
-.terminal-screen {
-    background-color: #0a0a0a;
-    border: 1px solid #1a1a1a;
-   /* border-top: none;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;*/
-    margin: 0 auto;
-    max-width: 90%;
-    width: 800px;
-    /* Adjust padding to make the text go further left */
-    padding-top: 10px;    /* Keep top/bottom padding as is */
-    padding-bottom: 10px;
-    padding-left: 0px;   /* Changed from 20px to 10px to align with window bar */
-    padding-right: 20px;  /* Keep right padding as is, or adjust as needed */
-    /* A shorthand for the above would be: padding: 10px 20px 10px 10px; */
-
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
-    font-family: 'VT323', monospace;
-}
-
-.terminal-prompt {
-    color: #0f0;
-    font-size: 1.2em;
-    margin: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    /*text-align:left;*/
-}
-
-.blinking-underscore {
-    color: #0f0;
-    animation: blink-underscore 1s steps(1, end) infinite;
-}
-
-@keyframes blink-underscore {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-}
 
 /*experience*/
 /* Your .all-experience (the outer container with background image) */
