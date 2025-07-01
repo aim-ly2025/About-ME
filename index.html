@@ -83,21 +83,23 @@
     </div>
     <!-- Quick Bio-->
     <div class="custom-container-one container border-shadow-left">
-        <div class="row">
-            <div class="col-6">
-            <img src="catImg1.jpg" class="img-fluid rounded" alt="..."> <!--Scale down image and round corners-->
-            </div>
-            <div class="col-6">
-            <h2 id="bio" class="subtle-glow">
-             About <span class="blue-text-glow">Me</span></h2>
-            
-            <p id="name" class="subtle-glow">Mia Ly<p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> 
-            </div>
+    <div class="row">
+        <!-- Image Column: Always full width on small screens (col-12), then 6 columns on medium screens and up (col-md-6) -->
+        <div class="col-12 col-md-6">
+            <img src="catImg1.jpg" class="img-fluid rounded" alt="A cat image">
+        </div>
 
-            </div>
+        <!-- Text Column: Always full width on small screens (col-12), then 6 columns on medium screens and up (col-md-6) -->
+        <div class="col-12 col-md-6">
+            <h2 id="bio" class="subtle-glow">
+                About <span class="blue-text-glow">Me</span>
+            </h2>
+            <p id="name" class="subtle-glow">C:\Users\My name>ipconfig</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
     </div>
+</div>
+
 
     <!-- About Me photos-->
 <div class="custom-container-two ">
@@ -108,7 +110,7 @@
             <div class="bg-transparent card"> <!-- Us a Bootstrap Utility Class-->
                 <img class="card-img-top" src="robot.JPG" alt="Robot image for card 1">
                 <div class="card-body">
-                    <h5 class="card-title subtle-glow">Card Title 1</h5>
+                    <h5 class="card-title subtle-glow">Card 1 <span class="blue-text-glow">Title</span></h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class=" custom-button btn btn-primary">Go somewhere</a>
                 </div>
@@ -119,7 +121,7 @@
             <div class="bg-transparent card">
                 <img class="card-img-top" src="robot.JPG" alt="Robot image for card 2">
                 <div class="card-body">
-                    <h5 class="card-title subtle-glow">Card Title 2</h5>
+                    <h5 class="card-title subtle-glow">Card 2 <span class="blue-text-glow">Title</span></h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="custom-button btn btn-primary">Go somewhere</a>
                 </div>
@@ -130,7 +132,7 @@
             <div class="bg-transparent card">
                 <img class="card-img-top" src="robot.JPG" alt="Robot image for card 3">
                 <div class="card-body">
-                    <h5 class="card-title subtle-glow">Card Title 3</h5>
+                    <h5 class="card-title subtle-glow">Card 3 <span class="blue-text-glow">Title</span></h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="custom-button btn btn-primary">Go somewhere</a>
                 </div>
@@ -143,7 +145,7 @@
             <div class="bg-transparent card">
                 <img class="card-img-top" src="robot.JPG" alt="Robot image for card 4">
                 <div class="card-body">
-                    <h5 class="card-title subtle-glow">Card Title 4</h5>
+                    <h5 class="card-title subtle-glow">Card 4 <span class="blue-text-glow">Title</span></h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="custom-button btn btn-primary">Go somewhere</a>
                 </div>
@@ -154,10 +156,7 @@
             <div class="bg-transparent card">
                 <img class="card-img-top" src="robot.JPG" alt="Robot image for card 5">
                 <div class="card-body">
-                    <!--Doesn't work-->
-                    <h5 class="card-title subtle-glow">Card <span class="blue-text-glow">Title</span></h5>
-
-    
+                    <h5 class="card-title subtle-glow">Card 5<span class="blue-text-glow">Title</span></h5>   
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="custom=button btn btn-primary">Go somewhere</a>
                 </div>
@@ -168,7 +167,7 @@
             <div class="bg-transparent card">
                 <img class="card-img-top" src="robot.JPG" alt="Robot image for card 6">
                 <div class="card-body">
-                    <h5 class="card-title subtle-glow">Card Title 6</h5>
+                    <h5 class="card-title subtle-glow">Card 6 <span class="blue-text-glow">Title</span></h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="custom-button btn btn-primary">Go somewhere</a>
                 </div>
@@ -181,15 +180,37 @@
 
 
     <!-- Experience -->
-     <div class="all-experience">
-    <div class="experience-section">
+<nav class="terminal-navbar">
+        <div class="terminal-window-bar">
+            <div class="terminal-window-controls">
+                <span class="control-btn close-btn"></span>
+                <span class="control-btn minimize-btn"></span>
+                <span class="control-btn maximize-btn"></span>
+            </div>
+            <span class="terminal-window-title">Terminal</span>
+            <div class="terminal-window-menu-icons">
+                 </div>
+        </div>
+
+        <div class="terminal-screen">
+            <p class="terminal-prompt">user@portfolio:~ $ <span class="blinking-underscore">_</span></p>
+        </div>
+    </nav>
+
+    <div style="height: 1000px; padding-top: 100px; text-align: center; color: #ccc;">
+        <p>This is where your main website content would be.</p>
+        <p>The terminal navbar is now at the top.</p>
+    </div>
+
+    <div class="all-experience">
+    <div class="experience-section ">
     <div id="accordion">
-        <h2 class="h2sections"> Experience</h2>
+        <h2 id="experience-padding" class="h2sections" > Experience</h2>
         <div class="card">
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
                     <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Collapsible Group Item #1
+                        C:\Users\meh>ipconfig
                     </button>
                 </h5>
             </div>
@@ -204,7 +225,7 @@
             <div class="card-header" id="headingTwo">
                 <h5 class="mb-0">
                     <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Collapsible Group Item #2
+                        Executing... Robotics.exe
                     </button>
                 </h5>
             </div>

@@ -8,6 +8,10 @@
 
 }*/
 
+
+/* Containers */
+
+/*Biography container*/
 .custom-container-one{
     background-color: rgba(5,20,61,255);
     border-radius: 50px;
@@ -23,6 +27,7 @@
     border-style: ;*/
 }
 
+/* About me Photos Container*/
 .custom-container-two{
     /*
   background: #05143D;
@@ -33,6 +38,311 @@ padding-bottom: 100px;
 background: rgba(5,20,61,255)/*#030c21*/;
 background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54%, rgba(8, 31, 94, 1) 79%, rgba(10, 38, 118, 1) 88%, rgba(10, 38, 118, 1) 97%);
 }
+
+
+
+/* Buttons */
+ .btn-primary {
+    --bs-btn-bg: #123dc9;
+    --bs-btn-border-color: #1137af;
+    --bs-btn-hover-bg: #14308d; /* A slightly darker shade for hover */
+    --bs-btn-hover-border-color: #1b4ef5;
+    border-width: 2px;
+    /* Don't forget text color if needed */
+    --bs-btn-color: white; 
+}
+
+/* h2 alignment*/
+.h2sections{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 120px;
+    padding: 20px;
+
+}
+
+/* Biography */
+
+/*small tweaks for bio*/
+#bio{
+    margin-bottom: 5px;
+    margin-top: 30px;
+    /*padding: 20px;*/
+}
+
+#name{
+  font-family: 'vt323', sans-serif;
+  font-weight: lighter;
+}
+
+/* Experience Section Container */
+.experience-section {
+    /* Simplify margin for horizontal centering and control top/bottom explicitly */
+    margin-left: 300px;  /* Keep explicit left margin */
+    margin-right: 300px; /* Keep explicit right margin */
+    margin-top: 0;       /* IMPORTANT: Set top margin here, or leave it to parent flow. */
+    margin-bottom: 0;    /* Set bottom margin as needed. */
+    /* Or, if you want it to be responsive with consistent side margins: */
+    /* margin: 0 15%; /* 0 top/bottom, 15% left/right, centers content better */
+    /* max-width: 1200px; /* Optional: A max-width can help maintain readability on large screens */
+    /* margin: 0 auto; /* Combine with max-width for true centering and then add padding */
+
+
+    /* Adjust padding for space *inside* the section */
+    padding: 50px; /* Uniform padding all around the content inside experience-section */
+    /* If you want less space above "Experience" title, reduce this padding-top */
+    /* padding-top: 50px; /* For example, reduce it from your original 100px */
+
+    background-color: rgba(30, 0, 50, 0.3); /* Custom semi-transparent background */
+    border-radius: 20px; /* Keep your border-radius */
+}
+
+/* Specific styling for the "Experience" title (h2) */
+.h2sections {
+    /* This targets your "Experience" title directly */
+    color: white; /* Ensure text is visible on the transparent background */
+    text-align: center; /* Center the title, if desired */
+    margin-top: 0;      /* Remove default margin-top if padding on parent handles it */
+    margin-bottom: 30px; /* Add space below the title, before accordion starts */
+    /* If you want space *above* the title within the transparent section,
+       you would increase the padding-top of .experience-section, NOT margin-top of .h2sections.
+       The margin-top of h2sections would create space *between* the h2 and the *top border* of .experience-section.
+       If your goal is to show *more background image above the entire accordion*, then you need to adjust
+       the `margin-top` of `.experience-section` or the `padding-top` of its *parent* container.
+    */
+}
+
+
+/* The .experience-padding class in your original code seems unused or misplaced. */
+/* If you intended to use it for the h2, apply it to the h2 in HTML: */
+/* <h2 class="h2sections experience-padding"> Experience</h2> */
+/* And then the CSS for .experience-padding would apply to it. */
+/* However, for a single title, targeting .h2sections is simpler. */
+
+
+/* Rest of your CSS (cards, all-experience) should remain as you had it */
+
+/* Your .all-experience (the outer container with background image) */
+/* Experience Section Container */
+/* Experience Section Container */
+.experience-section {
+    /* Responsive Horizontal Spacing */
+    /* On small screens (mobile-first), use smaller left/right padding */
+    padding-left: 20px;
+    padding-right: 20px;
+    /* Use margin-top/bottom for vertical spacing as needed */
+    margin-top: 50px; /* Example: space from element above */
+    margin-bottom: 50px; /* Example: space from element below */
+
+    /* For larger screens (md breakpoint and up), apply max-width and center it */
+    max-width: 1200px; /* Max width for the content area on large screens */
+    margin-left: auto;   /* Centers the element horizontally */
+    margin-right: auto;  /* Centers the element horizontally */
+
+    /* Adjust padding for space *inside* the section */
+    padding-top: 50px;   /* Keep top padding for space above title */
+    padding-bottom: 50px;/* Keep bottom padding for space below content */
+
+
+    background-color: rgba(30, 0, 50, 0.3); /* Custom semi-transparent background */
+    border-radius: 20px; /* Keep your border-radius */
+}
+
+/* You might want to use Bootstrap's built-in container classes as well,
+   or integrate this custom CSS with them. If you add 'container' to
+   .experience-section, you could simplify the margin/max-width like so:
+   .experience-section.container {
+       padding-top: 50px;
+       padding-bottom: 50px;
+       background-color: rgba(30, 0, 50, 0.3);
+       border-radius: 20px;
+   }
+   and ensure this container is properly nested within the .all-experience div.
+*/
+
+
+/* Specific styling for the "Experience" title (h2) */
+.h2sections {
+    color: white;
+    text-align: center;
+    margin-top: 0;      /* Remove default margin-top from h2 */
+    margin-bottom: 30px; /* Add space below the title */
+}
+/*non-functional ternimal*/
+
+/* --- Terminal Navbar Styles (modified to be less conflicting) --- */
+/* --- Terminal Navbar Container (represents the whole window) --- */
+.terminal-navbar {
+    background-color: #000; /* Outer background, slightly darker than screen */
+    width: 100%;
+    /* Optional: Fixed position for a sticky navbar */
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
+    /* z-index: 1000; */
+    box-sizing: border-box;
+    padding-top: 0; /* Remove top padding to let window bar sit flush */
+    padding-bottom: 0; /* Remove bottom padding as terminal screen has its own */
+}
+
+/* --- New: Terminal Window Bar (the top bar with controls and title) --- */
+.terminal-window-bar {
+    background-color: #2c2c2c; /* Dark grey, slightly lighter than terminal screen */
+    color: #e0e0e0; /* Light text for title */
+    height: 30px; /* Fixed height for the bar */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center items */
+    padding: 0 10px; /* Horizontal padding inside the bar */
+    font-family: sans-serif; /* A more standard font for the title bar text */
+    font-size: 0.9em;
+    border-top-left-radius: 8px; /* Match outer container's top radius if applied */
+    border-top-right-radius: 8px; /* Match outer container's top radius if applied */
+    position: sticky; /* Sticky positioning for the bar within the navbar */
+    top: 0;
+    /* The image has the overall terminal window slightly rounded, so the bar should match. */
+    /* If .terminal-navbar has border-radius, apply it here for top corners. */
+    /* Example: border-top-left-radius: 5px; border-top-right-radius: 5px; */
+}
+
+.terminal-window-controls {
+    display: flex;
+    gap: 6px; /* Space between control buttons */
+    margin-right: 10px; /* Space between controls and title */
+}
+
+.control-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%; /* Make them circular */
+    cursor: default; /* Indicate non-interactable */
+    /* Adjust these colors to match the image's subtle grey controls */
+    background-color: #7d7d7d; /* Grey button color */
+    border: 1px solid #555; /* Subtle border for depth */
+}
+/* You can make them different colors if you want the Mac style */
+/* .close-btn { background-color: #ff5f56; } */
+/* .minimize-btn { background-color: #ffbd2e; } */
+/* .maximize-btn { background-color: #27c93f; } */
+
+
+.terminal-window-title {
+    flex-grow: 1; /* Allows title to take up available space and pushes menu icons to right */
+    text-align: center; /* Center the title text */
+    font-weight: bold;
+    color: #c0c0c0; /* Slightly lighter grey for the title */
+}
+
+.terminal-window-menu-icons {
+    /* Styles for hamburger menu icons or other controls on the right */
+    margin-left: 10px; /* Space from title */
+    color: #c0c0c0; /* Color for any icons */
+    /* Example for adding actual icons (requires icon library or SVG) */
+    /* span { width: 4px; height: 4px; background-color: currentColor; margin-left: 2px; } */
+}
+
+
+/* --- Existing: Terminal Screen (now adjusted for layout) --- */
+/* --- Existing: Terminal Screen (adjusted padding) --- */
+.terminal-screen {
+    background-color: #0a0a0a;
+    border: 1px solid #1a1a1a;
+   /* border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;*/
+    margin: 0 auto;
+    max-width: 90%;
+    width: 800px;
+    /* Adjust padding to make the text go further left */
+    padding-top: 10px;    /* Keep top/bottom padding as is */
+    padding-bottom: 10px;
+    padding-left: 0px;   /* Changed from 20px to 10px to align with window bar */
+    padding-right: 20px;  /* Keep right padding as is, or adjust as needed */
+    /* A shorthand for the above would be: padding: 10px 20px 10px 10px; */
+
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+    font-family: 'VT323', monospace;
+}
+
+.terminal-prompt {
+    color: #0f0;
+    font-size: 1.2em;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    /*text-align:left;*/
+}
+
+.blinking-underscore {
+    color: #0f0;
+    animation: blink-underscore 1s steps(1, end) infinite;
+}
+
+@keyframes blink-underscore {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/*experience*/
+/* Your .all-experience (the outer container with background image) */
+.all-experience {
+    background-image:
+        linear-gradient(#081F5E, rgba(0, 0, 0, .7)),
+        url('Images/roboWallpaper2.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #333;
+    min-height: 400px;
+    box-shadow: inset 0 0 100px 50px #081F5E;
+}
+
+/* Card specific styles (adjusted for better contrast) */
+.experience-section .card {
+    background-color: rgba(10, 38, 118, 0.5) !important;
+    border: 1px solid rgba(10, 38, 118, 0.5);
+    margin-bottom: 10px;
+    color: white; /* Default text color for card content */
+}
+
+.experience-section .card-header {
+    background-color: rgba(10, 38, 118, 0.7) !important;
+    border-bottom: 1px solid rgba(10, 38, 118, 0.7);
+    color: white; /* Header text color */
+}
+
+.experience-section .card-header .btn-link { /* Target button specifically for font size */
+    color: #69ecfe !important;
+    font-family: 'vt323', sans-serif;
+    font-size: 1.8em !important; /* Adjust as needed, 'em' units are responsive */
+    text-align: left;
+    white-space: normal;
+    padding: 10px; /* Add padding to the button itself for click area */
+    display: block; /* Make the button take full width of its parent for easier clicks */
+}
+
+
+.experience-section .card-body {
+    background-color: rgba(10, 38, 118, 0.5) !important;
+    color: #e6e6e6 !important;
+    font-family: 'vt323', sans-serif;
+    font-size: x-large;
+}
+
+
+/*rgba(5,35,108,0.3) maybe
+/*rgba(10, 38, 118, 0.3) maybe*/
+/*rgba(1,3,7,0.3)
+/* Target .card directly within .experience-section for background */
+
+/*backgrounds */
+
+body{
+    background-color:rgba(4,17,51,255);
+}
+
 
 .custom-card{
     background-color: transparent;
@@ -59,90 +369,7 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
             /* display: inline-block; /* For links styled as buttons */
             /* cursor: pointer; */ 
 
-
- .btn-primary {
-    --bs-btn-bg: #123dc9;
-    --bs-btn-border-color: #1137af;
-    --bs-btn-hover-bg: #14308d; /* A slightly darker shade for hover */
-    --bs-btn-hover-border-color: #1b4ef5;
-    border-width: 2px;
-    /* Don't forget text color if needed */
-    --bs-btn-color: white; 
-}
-
-.h2sections{
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 120px;
-    padding: 20px;
-
-}
-
-#bio{
-    margin-bottom: 5px;
-    margin-top: 30px;
-    /*padding: 20px;*/
-}
-/*
-#name{
-    font-size: x-large;
-  
-}*/
-
-.experience-section{
-    margin: auto;
-    padding: 50px;
-    margin-left: 350px; 
-    margin-right: 350px;
-    background-color: ;
-    border-radius: 20px;
-
-}
-.all-experience{
-   background-image:
-        linear-gradient(#081F5E, rgba(0, 0, 0, .7)), /* Black overlay with 50% opacity */
-        url('Images/roboWallpaper2.jpg'); /* Your original image */
-
-    /* --- Essential background properties (from previous answers) --- */
-    background-size: cover;       /* Ensures the image covers the entire area */
-    background-position: center;  /* Centers the image */
-    background-repeat: no-repeat; /* Prevents image repetition */
-    background-attachment: fixed; /* (Optional) Fixes background during scroll */
-
-    /* Add a fallback background color in case the image fails to load */
-    background-color: #333; /* A dark fallback color */
-
-    /* Ensure the element has height for the background to be visible */
-    min-height: 400px; /* Example: adjust as needed */
-  
-    /* --- Vignette Effect on Borders --- */
-    box-shadow:
-        inset 0 0 100px 50px #081F5E; /* Inset shadow for vignette */
-        /*
-        Explanation of values:
-        - inset: Makes the shadow appear inside the element.
-        - 0 0: No horizontal or vertical offset (shadow is centered).
-        - 100px: Blur radius. A larger value creates a softer, more spread-out fade.
-        - 50px: Spread radius. This expands the shadow outwards from the element's edges.
-                A positive value makes the shadow larger; a negative value makes it smaller.
-                We want it to spread inwards from the border.
-        - rgba(51, 0, 51, 0.8): The color (dark purple) and its opacity (80%).
-        */
-
-}
-
-.center-intro{
-}
-
-body{
-    background-color:rgba(4,17,51,255);
-}
-
-p,h3,h2{
-    color: aliceblue;
-  
-}
-
+/* Navbar */
 .my-custom-navbar{
     background-color: 0; /*maybe leave transparent*/
 }
@@ -190,14 +417,14 @@ p,h3,h2{
     font-weight:bolder;*/
 }
 
+
+/* Fonts and color*/
 .card-title{
   font-family: 'GlitchSlap', sans-serif;
   font-size: x-large;
 }
 .blue-text-glow{
-  color: #0165ff
-
-;
+  color: #0165ff;
 
 
    /* Or any base text color that contrasts well with your shadows */
@@ -227,6 +454,12 @@ font-family: 'GlitchSlap', sans-serif;
 font-weight:bolder;
 font-size: xx-large;
 }
+
+p,h3,h2{
+    color: aliceblue;
+  
+}
+
 p{
   font-family: 'KernelPanic', sans-serif;
   font-weight:bolder;
@@ -238,6 +471,7 @@ img{
 
 }
 
+/* Carousel */
 /* Apply these styles to ALL captions, not just the active one, if you want consistent centering */
 .carousel-caption {
     position: absolute;
@@ -293,7 +527,7 @@ img{
   color: #888888;
 }  */
 
-
+/* Imported Fonts */
 /* --- GlitchSlap Font --- */
 @font-face {
   font-family: 'GlitchSlap'; /* Unique name for this font */
@@ -347,18 +581,28 @@ img{
   font-style: normal;
   font-display: swap;
 }
+
+/* --- vt323 Font --- */
+@font-face {
+  font-family: 'vt323'; /* Unique name for this font */
+  src: url('fonts/vt323_5.2.6/webfonts/vt323-latin-400-normal.woff') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* --- Applying the Fonts --- */
 /* You need to decide WHICH font you want to apply to the div */
 /* Or apply different fonts to different elements */
 
-div {
+/*div {
   /* Only ONE font-family property will be applied. The last one wins. */
   /* If you want GlitchSlap to be the main font for all divs: */
   /*font-family: 'KernelPanic', sans-serif;
 
   /* If you wanted KernelPanic for *all* divs, you'd only list that: */
   /* font-family: 'KernelPanic', sans-serif; */
-}
+
 
 /* Examples of applying different fonts to different elements or classes: */
 .glitch-text {
