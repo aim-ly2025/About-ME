@@ -39,6 +39,25 @@ background: rgba(5,20,61,255)/*#030c21*/;
 background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54%, rgba(8, 31, 94, 1) 79%, rgba(10, 38, 118, 1) 88%, rgba(10, 38, 118, 1) 97%);
 }
 
+/*Contacts*/
+
+.custom-container-three{
+    background-color: rgba(5,20,61,255);
+    border-radius: 50px;
+    margin-bottom: 250px;
+    margin-top: 250px;
+    margin-left:20px;
+    margin-right:20px;
+    
+    box-shadow: -70px 100px 90px -60px rgb(10, 38, 118),  -55px -50px 50px -80px white/*#06c6e2*/inset;
+  /*  background: linear-gradient(right, #ffffff  0%, #ffffff 10%);*/
+   /*background: #020024;
+/*background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+
+    /*border-color: rgb(15, 143, 255);
+    border-style: ;*/
+}
+
 
 
 /* Buttons */
@@ -131,7 +150,7 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
     padding-left: 20px;
     padding-right: 20px;
     /* Use margin-top/bottom for vertical spacing as needed */
-    margin-top: 50px; /* Example: space from element above */
+    margin-top: 0px; /* Example: space from element above */
     margin-bottom: 50px; /* Example: space from element below */
 
     /* For larger screens (md breakpoint and up), apply max-width and center it */
@@ -231,7 +250,7 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
     font-weight: bold;
     color: #c0c0c0; /* Slightly lighter grey for the title */
 }
-
+/*
 .terminal-window-menu-icons {
     /* Styles for hamburger menu icons or other controls on the right */
     margin-left: 10px; /* Space from title */
@@ -243,6 +262,7 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
 
 /* --- Existing: Terminal Screen (now adjusted for layout) --- */
 /* --- Existing: Terminal Screen (adjusted padding) --- */
+
 .terminal-screen {
     background-color: #0a0a0a;
     border: 1px solid #1a1a1a;
@@ -255,7 +275,7 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
     /* Adjust padding to make the text go further left */
     padding-top: 10px;    /* Keep top/bottom padding as is */
     padding-bottom: 10px;
-    padding-left: 0px;   /* Changed from 20px to 10px to align with window bar */
+    padding-left: 10px;   /* Changed from 20px to 10px to align with window bar */
     padding-right: 20px;  /* Keep right padding as is, or adjust as needed */
     /* A shorthand for the above would be: padding: 10px 20px 10px 10px; */
 
@@ -264,16 +284,19 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
 }
 
 .terminal-prompt {
-    color: #0f0;
-    font-size: 1.2em;
-    margin: 0;
+    color:#00ffff;
+    font-size: x-large;
+    margin: auto;
+    text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    /*text-align:left;*/
+    padding-bottom: 30px;
+    /*background-color: #000;*/
+
 }
 
 .blinking-underscore {
-    color: #0f0;
+   
     animation: blink-underscore 1s steps(1, end) infinite;
 }
 
@@ -316,7 +339,7 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
 .experience-section .card-header .btn-link { /* Target button specifically for font size */
     color: #69ecfe !important;
     font-family: 'vt323', sans-serif;
-    font-size: 1.8em !important; /* Adjust as needed, 'em' units are responsive */
+    font-size: x-large !important; /* Adjust as needed, 'em' units are responsive */
     text-align: left;
     white-space: normal;
     padding: 10px; /* Add padding to the button itself for click area */
@@ -328,7 +351,7 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
     background-color: rgba(10, 38, 118, 0.5) !important;
     color: #e6e6e6 !important;
     font-family: 'vt323', sans-serif;
-    font-size: x-large;
+    font-size: large;
 }
 
 

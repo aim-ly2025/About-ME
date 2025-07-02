@@ -1,5 +1,4 @@
 1. find pictures to showcase my projects/extracurrilers
-2. revise my bio?
 3. make a list of my skills under the experience section
 4. setup some github projects links
 7. the contact me section add colorful icons to the accounts 
@@ -13,7 +12,7 @@ Very important:
 2. change margin and padding
 4.fix werid margin on experience section
 5. resize the images
-
+6. try to color the code on experience section 
 
 Conditionals: If the screen becomes similar to the phone screen then the image for bio is under the text. might use JS.
 Same goes for experience section so it doesn'y disappear, make it for phone screen
