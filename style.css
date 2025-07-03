@@ -44,11 +44,12 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
 .custom-container-three{
     background-color: rgba(5,20,61,255);
     border-radius: 50px;
-    margin-bottom: 250px;
+    /* /* margin-bottom: 250px;
     margin-top: 250px;
-    margin-left:20px;
-    margin-right:20px;
+    margin-left:20px; 
+    margin-right:20px; */
     
+    text-align: center;
     box-shadow: -70px 100px 90px -60px rgb(10, 38, 118),  -55px -50px 50px -80px white/*#06c6e2*/inset;
   /*  background: linear-gradient(right, #ffffff  0%, #ffffff 10%);*/
    /*background: #020024;
@@ -57,7 +58,12 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
     /*border-color: rgb(15, 143, 255);
     border-style: ;*/
 }
-
+/* 
+#contacts-padding{
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+ */
 
 
 /* Buttons */
@@ -478,9 +484,19 @@ font-weight:bolder;
 font-size: xx-large;
 }
 
-p,h3,h2{
+p,h3,h2,h5.card-title{
     color: aliceblue;
-  
+}
+
+#contacts-body{
+  font-size: larger;
+
+}
+
+#contacts-title{
+    font-size: x-large;
+    padding-top: 0px;;
+
 }
 
 p{
@@ -549,6 +565,79 @@ img{
 /* .navbar-nav .nav-link.disabled {
   color: #888888;
 }  */
+
+
+/*Projects*/
+
+*,*::after, *::before {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+/*         body {
+            background-color: rgb(8 51 68);
+        }
+
+        main {
+          width: 100vw;
+          height: 100vh;
+          flex-direction: row;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+        }
+
+        .carousel {
+            width: 60vw;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+         */
+        h1, p, i.fa-brands {
+            color: rgb(8 51 68);
+        }
+
+        small.role {
+            background-color: rgb(8 51 68);
+            color: rgb(103 232 249);
+
+        }
+        /* Controls */
+
+        i.fa-arrow-right,
+       i.fa-arrow-left {
+          background: none;
+          border: 2px solid rgb(103 232 249);
+          color: rgb(103 232 249);
+          padding: 10px;
+          border-radius: 100%;
+          transition: background .6s ease;
+        }
+
+        i.fa-arrow-right:hover,
+       i.fa-arrow-left:hover {
+          background: rgb(103 232 249);
+          color: black;
+        }
+
+        /* Indicators */
+        .carousel-indicators [data-bs-target] {
+          width: 10px;
+          height: 10px;
+          border-radius: 100%;
+          border: 2px solid rgb(8 51 68);
+        }
+
+        .carousel-indicators .active {
+            opacity: 1;
+            background-color:  rgb(103 232 249);
+        }
+
 
 /* Imported Fonts */
 /* --- GlitchSlap Font --- */
