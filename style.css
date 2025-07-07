@@ -9,6 +9,68 @@
 }*/
 
 
+/* Fonts and color*/
+.card-title{
+  font-family: 'GlitchSlap', sans-serif;
+  font-size: x-large;
+}
+.blue-text-glow{
+  color: #0165ff;
+
+
+   /* Or any base text color that contrasts well with your shadows */
+    text-shadow:
+        /* Light gray subtle glow */
+        0 0 7px #082575, /* Very subtle, slightly transparent light gray glow */
+        0 0 7px #0c37ad, /* A bit more spread, softer light gray glow */
+
+        /* Black subtle outline/depth (very faint) */
+        1px 1px 5px #09246e,   /* Slightly offset, very small blur, semi-transparent black for depth */
+        -1px -1px 5px #092f96;  /* Opposite offset for balanced subtle effect */
+
+}
+.subtle-glow{
+    color: white; /* Or any base text color that contrasts well with your shadows */
+    text-shadow:
+        /* Light gray subtle glow */
+        0 0 7px rgba(200, 200, 200, 0.7), /* Very subtle, slightly transparent light gray glow */
+        0 0 7px rgba(200, 200, 200, 0.5), /* A bit more spread, softer light gray glow */
+
+        /* Black subtle outline/depth (very faint) */
+        1px 1px 5px rgba(0, 0, 0, 0.3),   /* Slightly offset, very small blur, semi-transparent black for depth */
+        -1px -1px 5px rgba(0, 0, 0, 0.3);  /* Opposite offset for balanced subtle effect */
+}
+h2,h3{
+font-family: 'GlitchSlap', sans-serif; 
+font-weight:bolder;
+font-size: xx-large;
+}
+
+p,h3,h2,h5,.card-body,.card-title,.card-text,.bio-text{
+    color: aliceblue;
+}
+
+#contacts-body{
+  font-size: larger;
+
+}
+
+#contacts-title{
+    font-size: x-large;
+    padding-top: 0px;;
+
+}
+
+p{
+  font-family: 'KernelPanic', sans-serif;
+  font-weight:bolder;
+  font-size: x-large;
+}
+img{
+  height: auto;
+  width: auto;
+
+}
 /* Containers */
 
 /*Biography container*/
@@ -41,22 +103,19 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
 
 /*Contacts*/
 
-.custom-container-three{
-    background-color: rgba(5,20,61,255);
-    border-radius: 50px;
-    /* /* margin-bottom: 250px;
-    margin-top: 250px;
-    margin-left:20px; 
-    margin-right:20px; */
-    
-    text-align: center;
-    box-shadow: -70px 100px 90px -60px rgb(10, 38, 118),  -55px -50px 50px -80px white/*#06c6e2*/inset;
-  /*  background: linear-gradient(right, #ffffff  0%, #ffffff 10%);*/
-   /*background: #020024;
-/*background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+.custom-container-three {
+    background-color: rgba(5, 20, 61, 255); /* Your existing background color */
+    border-radius: 30px; /* Slightly reduced border-radius for a more compact look */
 
-    /*border-color: rgb(15, 143, 255);
-    border-style: ;*/
+    /* Centering and Width Control */
+    max-width: 800px; /* Smaller max-width for the container (adjust as needed) */
+    margin: 80px auto; /* Significantly reduced vertical margins and horizontally centered */
+    /* If you want it closer to the exact screen center vertically, you could use a larger margin or flexbox on a parent.
+       '80px auto' pushes it from the top and bottom while centering horizontally. */
+
+    text-align: center; /* Centers inline content (like the h2) */
+    box-shadow: -70px 100px 90px -60px rgb(10, 38, 118),
+                -55px -50px 50px -80px white inset;
 }
 /* 
 #contacts-padding{
@@ -65,6 +124,7 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
 }
  */
 
+ 
 
 /* Buttons */
  .btn-primary {
@@ -259,11 +319,11 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
 /*
 .terminal-window-menu-icons {
     /* Styles for hamburger menu icons or other controls on the right */
-    margin-left: 10px; /* Space from title */
-    color: #c0c0c0; /* Color for any icons */
+    /*margin-left: 10px; Space from title */
+   /* color: #c0c0c0; /* Color for any icons */
     /* Example for adding actual icons (requires icon library or SVG) */
     /* span { width: 4px; height: 4px; background-color: currentColor; margin-left: 2px; } */
-}
+
 
 
 /* --- Existing: Terminal Screen (now adjusted for layout) --- */
@@ -276,8 +336,10 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;*/
     margin: 0 auto;
+    margin-bottom: px;
     max-width: 90%;
-    width: 800px;
+    width: 500px;
+    height: 50px; /* Fixed height for the terminal screen */
     /* Adjust padding to make the text go further left */
     padding-top: 10px;    /* Keep top/bottom padding as is */
     padding-bottom: 10px;
@@ -333,13 +395,16 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
     background-color: rgba(10, 38, 118, 0.5) !important;
     border: 1px solid rgba(10, 38, 118, 0.5);
     margin-bottom: 10px;
-    color: white; /* Default text color for card content */
+    /*card text color*/
+    /* color: white;  */
 }
 
 .experience-section .card-header {
     background-color: rgba(10, 38, 118, 0.7) !important;
     border-bottom: 1px solid rgba(10, 38, 118, 0.7);
-    color: white; /* Header text color */
+    /*header card header*/
+    /* color: white;  */ 
+
 }
 
 .experience-section .card-header .btn-link { /* Target button specifically for font size */
@@ -355,7 +420,7 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
 
 .experience-section .card-body {
     background-color: rgba(10, 38, 118, 0.5) !important;
-    color: #e6e6e6 !important;
+    /* color: #e6e6e6 !important; */
     font-family: 'vt323', sans-serif;
     font-size: large;
 }
@@ -446,71 +511,177 @@ body{
     font-weight:bolder;*/
 }
 
+/*Project showcase section*/
+/* --- Project Showcase Section --- */
 
-/* Fonts and color*/
-.card-title{
-  font-family: 'GlitchSlap', sans-serif;
-  font-size: x-large;
-}
-.blue-text-glow{
-  color: #0165ff;
+.project-background-image {
+ background-image:
+        linear-gradient(#081F5E, rgba(0, 0, 0, .7)),
+        url('Images/serverWallpaper.jpg');
 
-
-   /* Or any base text color that contrasts well with your shadows */
-    text-shadow:
-        /* Light gray subtle glow */
-        0 0 7px #082575, /* Very subtle, slightly transparent light gray glow */
-        0 0 7px #0c37ad, /* A bit more spread, softer light gray glow */
-
-        /* Black subtle outline/depth (very faint) */
-        1px 1px 5px #09246e,   /* Slightly offset, very small blur, semi-transparent black for depth */
-        -1px -1px 5px #092f96;  /* Opposite offset for balanced subtle effect */
-
-}
-.subtle-glow{
-    color: white; /* Or any base text color that contrasts well with your shadows */
-    text-shadow:
-        /* Light gray subtle glow */
-        0 0 7px rgba(200, 200, 200, 0.7), /* Very subtle, slightly transparent light gray glow */
-        0 0 7px rgba(200, 200, 200, 0.5), /* A bit more spread, softer light gray glow */
-
-        /* Black subtle outline/depth (very faint) */
-        1px 1px 5px rgba(0, 0, 0, 0.3),   /* Slightly offset, very small blur, semi-transparent black for depth */
-        -1px -1px 5px rgba(0, 0, 0, 0.3);  /* Opposite offset for balanced subtle effect */
-}
-h2,h3{
-font-family: 'GlitchSlap', sans-serif; 
-font-weight:bolder;
-font-size: xx-large;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #333;
+    min-height: 400px;
+    box-shadow: inset 0 0 100px 50px #081F5E;
 }
 
-p,h3,h2,h5.card-title{
-    color: aliceblue;
+.project-showcase-section {
+    background-image: rgba(5, 20, 61, 0.8); /* Slightly transparent background for the section */
+    padding: 80px 20px; /* Ample padding top/bottom, responsive horizontal */
+    margin-top: -50px; /* Space from previous section */
+    margin-bottom: 80px; /* Space to next section */
+    border-radius: 20px; /* Rounded corners for the entire section */
+    max-width: 1200px; /* Max width for the section content */
+    margin-left: auto; /* Center the section horizontally */
+    margin-right: auto;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); /* Subtle shadow for the section */
 }
 
-#contacts-body{
-  font-size: larger;
-
+.project-showcase-heading {
+    /* Inherits from .h2sections for basic styling */
+    margin-bottom: 50px; /* Space below the heading */
+    color: white; /* Ensure it's white */
+    text-align: center;
 }
 
-#contacts-title{
-    font-size: x-large;
-    padding-top: 0px;;
-
+/* --- Project Carousel Container --- */
+.project-carousel-container {
+    width: 100%;
+    /* No explicit height here; content will define height */
+    /* background-color: rgba(0, 0, 0, 0.3); /* Optional: subtle background for the carousel itself */
+    border-radius: 15px; /* Rounded corners for the carousel area */
+    overflow: hidden; /* Ensures content respects border-radius */
+    padding: 30px; /* Internal padding for the carousel content */
 }
 
-p{
-  font-family: 'KernelPanic', sans-serif;
-  font-weight:bolder;
-  font-size: x-large;
-}
-img{
-  height: auto;
-  width: auto;
-
+.project-carousel-inner {
+    /* No specific styles needed here, it's handled by Bootstrap */
 }
 
-/* Carousel */
+/* Broken Code
+.project-carousel-item {
+    padding: 20px; 
+    min-height: 400px;
+    display: flex !important; 
+    align-items: center; 
+} */
+
+.project-item-row {
+    width: 100%; /* Ensure row takes full width of carousel item */
+    align-items: center; /* Vertically align columns in the row */
+}
+
+/* --- Project Text Column --- */
+.project-text-column {
+    padding-right: 30px; /* Space between text and image on desktop */
+    padding-left: 20px; /* Internal padding */
+}
+
+.project-text-content {
+    color: aliceblue; 
+    text-align: left; 
+    font-size: large;
+} 
+
+ .project-title {
+    font-family: 'GlitchSlap', sans-serif; 
+    font-size: x-large; 
+    /* color: #00ffff; 
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;  */
+} 
+
+.project-description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #e0e0e0; /* Slightly off-white for body text */
+}
+
+.project-link {
+    /* Inherits from .btn .btn-primary .custom-btn */
+    display: inline-flex; /* Allows icon and text to align */
+    align-items: center;
+    gap: 8px; /* Space between text and icon */
+}
+
+/* --- Project Image Column --- */
+.project-image-column {
+    display: flex; /* Use flexbox to center image vertically */
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+    padding: 20px; /* Padding around the image */
+}
+
+.project-image-wrapper {
+    width: 100%; /* Image wrapper takes full width of its column */
+    max-width: 500px; /* Max width for the image itself */
+    border-radius: 10px; /* Rounded corners for the image wrapper */
+    overflow: hidden; /* Ensures image corners are rounded */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3); /* Subtle cyan glow around image */
+}
+
+.project-image {
+    width: 100%; /* Image fills its wrapper */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below image */
+    border-radius: 8px; /* Rounded corners for the image itself */
+}
+
+/* --- Carousel Controls (Arrows) --- */
+.project-carousel-control-prev,
+.project-carousel-control-next {
+    width: 5%; /* Make arrows smaller */
+    opacity: 0.7; /* Make them slightly transparent */
+    transition: opacity 0.3s ease;
+}
+
+.project-carousel-control-prev:hover,
+.project-carousel-control-next:hover {
+    opacity: 1; /* Fully opaque on hover */
+}
+
+.project-carousel-control-icon {
+    /* This targets the SVG icon inside the button */
+    filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.8)); /* Add a glow to the arrow icon */
+    background-color: transparent; /* Ensure no background on the icon itself */
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 767.98px) { /* Bootstrap's 'md' breakpoint is 768px */
+    .project-carousel-item {
+        flex-direction: column; /* Stack columns vertically */
+        text-align: center; /* Center text on small screens */
+        padding: 15px;
+    }
+
+    .project-text-column {
+        padding-right: 15px; /* Adjust padding for mobile */
+        padding-left: 15px;
+        margin-bottom: 30px; /* Space between text and image when stacked */
+    }
+
+    .project-text-content {
+        text-align: center; /* Center text content */
+    }
+
+    .project-title {
+        font-size: 2em; /* Smaller title on mobile */
+    }
+
+    .project-description {
+        font-size: 1em; /* Smaller description on mobile */
+    }
+
+    .project-image-column {
+        padding: 15px; /* Adjust padding for mobile */
+    }
+}
+
+/* Carousel Top */
 /* Apply these styles to ALL captions, not just the active one, if you want consistent centering */
 .carousel-caption {
     position: absolute;

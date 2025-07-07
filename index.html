@@ -6,14 +6,15 @@
     <title>Mia Ly</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
-
   </head>
   <body>
     <!---<h1 class="text-primary p-4">About Me</h1>
      <h2> Mia Ly </h2> ---->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-         
+    <!-- Your custom JavaScript for dynamic content or extra functionality -->
+    <!-- <script src="script.js"></script> -->
+    
     <!-- Navbar-->
     <nav class="navbar navbar-expand-lg my-custom-navbar">
     <div class="container-fluid">
@@ -95,7 +96,7 @@
                 About <span class="blue-text-glow">Me</span>
             </h2>
             <p id="name" class="subtle-glow">C:\Users\My name>ipconfig<span class="blinking-underscore">_</span></p>
-            <p>I grew up in San Francisco,the global hub for innovation. Being surrounded by technological advancements inspired me to pursue a Data Science degree at UC Davis. Some other reasons include my curosity, love of problem solving, and my habit for overthinking. <br> <br> I participated in Robotics, 2 Pre-Apprenticeships related to Information Technology and Computer Science, and Girls Who Code. These activites helped me develop my commmunication, creativity, and time management skills. <br><br> </p>
+            <p class="bio-text">I grew up in San Francisco,the global hub for innovation. Being surrounded by technological advancements inspired me to pursue a Data Science degree at UC Davis. Some other reasons include my curosity, love of problem solving, and my habit for overthinking. <br> <br> I participated in Robotics, 2 Pre-Apprenticeships related to Information Technology and Computer Science, and Girls Who Code. These activites helped me develop my commmunication, creativity, and time management skills. <br><br> </p>
  
           
         </div>
@@ -209,7 +210,7 @@
     <div class="all-experience">
     <div class="experience-section ">
     <div id="accordion">
-        <h2 id="experience-padding" class="h2sections" > Experience</h2>
+        <h2 id="experience-padding" class="h2sections" > Experience <span class="blue-text-glow">Section</span></h2>
           <div class="terminal-screen">
             <p class="terminal-prompt">Welcome to my informal LinkedIn page <span class="blinking-underscore">_</span></p>
         </div>
@@ -277,25 +278,146 @@
 <!--Projects-->
 
  
-
+    
 <!--Contacts-->
-<div class="custom-container-three" >
-    <h2 id="contacts-padding" class="h2sections" > Contacts</h2>
-<div class="card text-center bg-transparent">
-  <div class="card-body">
-    <h5 id="contacts-title" class="card-title">LinkedIn<i class="fa-brands fa-linkedin"></i></h5>
-    <p id="contacts-body"class="card-text">Formal Introduction</p>
-    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" class="btn btn-primary">Profile </a>
-</div>
+<div class="custom-container-three container"> <h2 id="contacts-padding" class="h2sections"> Contacts  <span class="blue-text-glow">Section</span></h2>
+
+    <div class="row justify-content-center">
+
+        <div class="col-12 col-md-6 mb-4"> <div class="card text-center custom-contact-card bg-transparent "> <div class="card-body">
+                    <h5 id="contacts-title-linkedin" class="card-title"> LinkedIn <i class="fa-brands fa-linkedin"></i>
+                    </h5>
+                    <p id="contacts-body-linkedin" class="card-text">Formal Introduction</p> <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="btn btn-primary custom-btn">Profile </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 mb-4"> <div class="card text-center custom-contact-card bg-transparent "> <div class="card-body">
+                    <h5 id="contacts-title-github" class="card-title"> GitHub <i class="fa-brands fa-github"></i>
+                    </h5>
+                    <p id="contacts-body-github" class="card-text">Code Portfolio</p> <a href="https://github.com/yourusername" target="_blank" class="btn btn-primary custom-btn">Repo </a>
+                </div>
+            </div>
+        </div>
+
+    </div> 
+</div> 
+
+
+    <!-- Project Showcase Carousel -->
+     <div class="project-background-image">
+    <div class="project-showcase-section">
+    <h2 class="project-showcase-heading h2sections">My  <span class="blue-text-glow">Projects</span></h2>
+
+    <div id="projectShowcaseCarousel" class="carousel slide project-carousel-container" data-bs-ride="carousel">
+        <div class="carousel-inner project-carousel-inner">
+
+            <div class="carousel-item active project-carousel-item">
+                <div class="row project-item-row">
+                    <div class="col-12 col-md-6 project-text-column">
+                        <div class="project-text-content">
+                            <h3 class="project-title">Final IoT Project</h3>
+                            <p class="project-description">This is a placeholder.</p>
+                            <a href="#" class="project-link btn btn-primary custom-btn">View Project </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 project-image-column">
+                        <div class="project-image-wrapper">
+                            <img src="https://placehold.co/600x400/081F5E/FFFFFF?text=Project+Alpha" class="img-fluid project-image rounded" alt="Project Alpha Screenshot">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item project-carousel-item">
+                <div class="row project-item-row">
+                    <div class="col-12 col-md-6 project-text-column">
+                        <div class="project-text-content">
+                            <h3 class="project-title">Project 2</h3>
+                            <p class="project-description">Placeholder</p>
+                            <a href="#" class="project-link btn btn-primary custom-btn">View Project </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 project-image-column">
+                        <div class="project-image-wrapper">
+                            <img src="https://placehold.co/600x400/004d40/FFFFFF?text=Project+Beta" class="img-fluid project-image rounded" alt="Project Beta Screenshot">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item project-carousel-item">
+                <div class="row project-item-row">
+                    <div class="col-12 col-md-6 project-text-column">
+                        <div class="project-text-content">
+                            <h3 class="project-title">Project 3</h3>
+                            <p class="project-description">Placeholder</p>
+                            <a href="#" class="project-link btn btn-primary custom-btn">View Project </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 project-image-column">
+                        <div class="project-image-wrapper">
+                            <img src="https://placehold.co/600x400/4a148c/FFFFFF?text=Project+Gamma" class="img-fluid project-image rounded" alt="Project Gamma Screenshot">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item project-carousel-item">
+                <div class="row project-item-row">
+                    <div class="col-12 col-md-6 project-text-column">
+                        <div class="project-text-content">
+                            <h3 class="project-title">Project 4 </h3>
+                            <p class="project-description">Placeholder</p>
+                            <a href="#" class="project-link btn btn-primary custom-btn">View Project </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 project-image-column">
+                        <div class="project-image-wrapper">
+                            <img src="https://placehold.co/600x400/880e4f/FFFFFF?text=Project+Delta" class="img-fluid project-image rounded" alt="Project Delta Screenshot">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item project-carousel-item">
+                <div class="row project-item-row">
+                    <div class="col-12 col-md-6 project-text-column">
+                        <div class="project-text-content">
+                            <h3 class="project-title">Project 5</h3>
+                            <p class="project-description">Placeholder</p>
+                            <a href="#" class="project-link btn btn-primary custom-btn">View Project </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 project-image-column">
+                        <div class="project-image-wrapper">
+                            <img src="https://placehold.co/600x400/1b5e20/FFFFFF?text=Project+Epsilon" class="img-fluid project-image rounded" alt="Project Epsilon Screenshot">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev project-carousel-control-prev" type="button" data-bs-target="#projectShowcaseCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon project-carousel-control-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next project-carousel-control-next" type="button" data-bs-target="#projectShowcaseCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon project-carousel-control-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 </div>
 </div>
 
+    
 <!-- <div class="custom-container-three center-block col-12 col-md-2">
 <div class="card text-center bg-transparent" style="width: 18rem;">
   <div class="card-body ">
     <h5 class="card-title">LinkedIn</h5>
     <p class="card-text">Formal Introduction</p>
-    <a href="#" class="btn btn-primary">Profile</a>
+    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" class="btn btn-primary">Profile</a>
   </div>
 </div>
 </div> -->
