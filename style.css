@@ -152,7 +152,6 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
 #bio{
     margin-bottom: 5px;
     margin-top: 30px;
-    /*padding: 20px;*/
 }
 
 #name{
@@ -162,11 +161,10 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
 
 /* Experience Section Container */
 .experience-section {
-    /* Simplify margin for horizontal centering and control top/bottom explicitly */
-    margin-left: 300px;  /* Keep explicit left margin */
-    margin-right: 300px; /* Keep explicit right margin */
-    margin-top: 0;       /* IMPORTANT: Set top margin here, or leave it to parent flow. */
-    margin-bottom: 0;    /* Set bottom margin as needed. */
+    margin-left: 300px;  
+    margin-right: 300px; 
+    margin-top: 0;       
+    margin-bottom: 0;    
     /* Or, if you want it to be responsive with consistent side margins: */
     /* margin: 0 15%; /* 0 top/bottom, 15% left/right, centers content better */
     /* max-width: 1200px; /* Optional: A max-width can help maintain readability on large screens */
@@ -184,31 +182,13 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
 
 /* Specific styling for the "Experience" title (h2) */
 .h2sections {
-    /* This targets your "Experience" title directly */
-    color: white; /* Ensure text is visible on the transparent background */
-    text-align: center; /* Center the title, if desired */
-    margin-top: 0;      /* Remove default margin-top if padding on parent handles it */
-    margin-bottom: 30px; /* Add space below the title, before accordion starts */
-    /* If you want space *above* the title within the transparent section,
-       you would increase the padding-top of .experience-section, NOT margin-top of .h2sections.
-       The margin-top of h2sections would create space *between* the h2 and the *top border* of .experience-section.
-       If your goal is to show *more background image above the entire accordion*, then you need to adjust
-       the `margin-top` of `.experience-section` or the `padding-top` of its *parent* container.
-    */
+    color: white; 
+    text-align: center; 
+    margin-top: 0;      
+    margin-bottom: 30px; 
 }
 
 
-/* The .experience-padding class in your original code seems unused or misplaced. */
-/* If you intended to use it for the h2, apply it to the h2 in HTML: */
-/* <h2 class="h2sections experience-padding"> Experience</h2> */
-/* And then the CSS for .experience-padding would apply to it. */
-/* However, for a single title, targeting .h2sections is simpler. */
-
-
-/* Rest of your CSS (cards, all-experience) should remain as you had it */
-
-/* Your .all-experience (the outer container with background image) */
-/* Experience Section Container */
 /* Experience Section Container */
 .experience-section {
     /* Responsive Horizontal Spacing */
@@ -230,7 +210,7 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
 
 
     background-color: rgba(30, 0, 50, 0.3); /* Custom semi-transparent background */
-    border-radius: 20px; /* Keep your border-radius */
+    border-radius: 20px; 
 }
 
 /* You might want to use Bootstrap's built-in container classes as well,
@@ -251,7 +231,7 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
     color: white;
     text-align: center;
     margin-top: 0;      /* Remove default margin-top from h2 */
-    margin-bottom: 30px; /* Add space below the title */
+    margin-bottom: 30px; 
 }
 /*non-functional ternimal*/
 
