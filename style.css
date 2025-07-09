@@ -1,12 +1,5 @@
-/*h2{
-    padding: 20px;
-    background-color: lightblue;
-}
 
-.carousel-caption d-none d-md-block{
-    color:black;
 
-}*/
 
 
 /* Fonts and color*/
@@ -81,9 +74,9 @@ img{
     margin-bottom: 250px;
     margin-top: 250px;
     box-shadow: -70px 100px 90px -60px rgb(10, 38, 118),  -55px -50px 50px -80px white/*#06c6e2*/inset;
-  /*  background: linear-gradient(right, #ffffff  0%, #ffffff 10%);*/
-   /*background: #020024;
-/*background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    /*  background: linear-gradient(right, #ffffff  0%, #ffffff 10%);*/
+    /*background: #020024;*/
+   /*background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 
     /*border-color: rgb(15, 143, 255);
     border-style: ;*/
@@ -110,19 +103,11 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
     /* Centering and Width Control */
     max-width: 800px; /* Smaller max-width for the container (adjust as needed) */
     margin: 80px auto; /* Significantly reduced vertical margins and horizontally centered */
-    /* If you want it closer to the exact screen center vertically, you could use a larger margin or flexbox on a parent.
-       '80px auto' pushes it from the top and bottom while centering horizontally. */
 
     text-align: center; /* Centers inline content (like the h2) */
     box-shadow: -70px 100px 90px -60px rgb(10, 38, 118),
                 -55px -50px 50px -80px white inset;
 }
-/* 
-#contacts-padding{
-  padding-top: 20px;
-  padding-bottom: 5px;
-}
- */
 
  
 
@@ -159,12 +144,12 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
   font-weight: lighter;
 }
 
-/* Experience Section Container */
-.experience-section {
-    margin-left: 300px;  
+/* Experience Section Container remove later*/
+/* .experience-section { */
+    /* margin-left: 300px;  
     margin-right: 300px; 
     margin-top: 0;       
-    margin-bottom: 0;    
+    margin-bottom: 0;     */
     /* Or, if you want it to be responsive with consistent side margins: */
     /* margin: 0 15%; /* 0 top/bottom, 15% left/right, centers content better */
     /* max-width: 1200px; /* Optional: A max-width can help maintain readability on large screens */
@@ -172,13 +157,13 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
 
 
     /* Adjust padding for space *inside* the section */
-    padding: 50px; /* Uniform padding all around the content inside experience-section */
+    /* padding: 50px; Uniform padding all around the content inside experience-section */
     /* If you want less space above "Experience" title, reduce this padding-top */
     /* padding-top: 50px; /* For example, reduce it from your original 100px */
 
-    background-color: rgba(30, 0, 50, 0.3); /* Custom semi-transparent background */
-    border-radius: 20px; /* Keep your border-radius */
-}
+    /* background-color: rgba(30, 0, 50, 0.3); Custom semi-transparent background */
+    /* border-radius: 20px; Keep your border-radius */
+
 
 /* Specific styling for the "Experience" title (h2) */
 .h2sections {
@@ -213,17 +198,7 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
     border-radius: 20px; 
 }
 
-/* You might want to use Bootstrap's built-in container classes as well,
-   or integrate this custom CSS with them. If you add 'container' to
-   .experience-section, you could simplify the margin/max-width like so:
-   .experience-section.container {
-       padding-top: 50px;
-       padding-bottom: 50px;
-       background-color: rgba(30, 0, 50, 0.3);
-       border-radius: 20px;
-   }
-   and ensure this container is properly nested within the .all-experience div.
-*/
+
 
 
 /* Specific styling for the "Experience" title (h2) */
@@ -262,11 +237,7 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
     font-size: 0.9em;
     border-top-left-radius: 8px; /* Match outer container's top radius if applied */
     border-top-right-radius: 8px; /* Match outer container's top radius if applied */
-    position: sticky; /* Sticky positioning for the bar within the navbar */
-    top: 0;
-    /* The image has the overall terminal window slightly rounded, so the bar should match. */
-    /* If .terminal-navbar has border-radius, apply it here for top corners. */
-    /* Example: border-top-left-radius: 5px; border-top-right-radius: 5px; */
+  
 }
 
 .terminal-window-controls {
@@ -854,17 +825,6 @@ body{
   font-display: swap;
 }
 
-/* --- Applying the Fonts --- */
-/* You need to decide WHICH font you want to apply to the div */
-/* Or apply different fonts to different elements */
-
-/*div {
-  /* Only ONE font-family property will be applied. The last one wins. */
-  /* If you want GlitchSlap to be the main font for all divs: */
-  /*font-family: 'KernelPanic', sans-serif;
-
-  /* If you wanted KernelPanic for *all* divs, you'd only list that: */
-  /* font-family: 'KernelPanic', sans-serif; */
 
 
 /* Examples of applying different fonts to different elements or classes: */
