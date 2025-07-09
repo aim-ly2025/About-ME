@@ -1,26 +1,24 @@
-/* File: style.css */
-/* Description: Custom styles for the personal portfolio website */
-/* Table of Contents:
-   1. Fonts and Colors
-   2. Containers
-   3. Buttons
-   4. Navbar
-   5. Project Showcase Section
-   6. Experience Section
-   7. Terminal Styles
-   8. Project Carousel Styles
-*/
+/*h2{
+    padding: 20px;
+    background-color: lightblue;
+}
 
-/**************************  Fonts and color  ***************************/
+.carousel-caption d-none d-md-block{
+    color:black;
+
+}*/
 
 
-
-
-/* Blue text color */
-/* This class can be applied to any text element to give it a blue color with a glow effect */
+/* Fonts and color*/
+.card-title{
+  font-family: 'GlitchSlap', sans-serif;
+  font-size: x-large;
+}
 .blue-text-glow{
   color: #0165ff;
 
+
+   /* Or any base text color that contrasts well with your shadows */
     text-shadow:
         /* Light gray subtle glow */
         0 0 7px #082575, /* Very subtle, slightly transparent light gray glow */
@@ -31,11 +29,8 @@
         -1px -1px 5px #092f96;  /* Opposite offset for balanced subtle effect */
 
 }
-
-/* Subtle glow effect for text */
-/* This class can be applied to any text element to give it a subtle glow effect */
 .subtle-glow{
-    color: white; /* Or any base text color that contrasts well with the shadows */
+    color: white; /* Or any base text color that contrasts well with your shadows */
     text-shadow:
         /* Light gray subtle glow */
         0 0 7px rgba(200, 200, 200, 0.7), /* Very subtle, slightly transparent light gray glow */
@@ -45,65 +40,57 @@
         1px 1px 5px rgba(0, 0, 0, 0.3),   /* Slightly offset, very small blur, semi-transparent black for depth */
         -1px -1px 5px rgba(0, 0, 0, 0.3);  /* Opposite offset for balanced subtle effect */
 }
-
-/* Headers text*/
 h2,h3{
 font-family: 'GlitchSlap', sans-serif; 
 font-weight:bolder;
 font-size: xx-large;
 }
 
-/*Universal card title text*/
-.card-title{
-  font-family: 'GlitchSlap', sans-serif;
-  font-size: x-large;
-}
-
-/* Text color for various elements */
-/* This sets the text color for paragraphs, headers, card body, card title, and bio text */
 p,h3,h2,h5,.card-body,.card-title,.card-text,.bio-text{
     color: aliceblue;
 }
 
-/*Universal p tag styles*/
+#contacts-body{
+  font-size: larger;
+
+}
+
+#contacts-title{
+    font-size: x-large;
+    padding-top: 0px;;
+
+}
+
 p{
   font-family: 'KernelPanic', sans-serif;
   font-weight:bolder;
   font-size: x-large;
 }
-
-/* h2 realignment and text color*/
-.h2sections{
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 120px;
-    padding: 20px;
-    color: white; 
-}
-
-/* Contacts body text */
-#contacts-body{
-  font-size: larger;
-}
-
-/* Contacts title text*/
-#contacts-title{
-    font-size: x-large;
-    padding-top: 0px;;
-}
-
-
-/* img{
+img{
   height: auto;
   width: auto;
 
-} */
+}
+/* Containers */
 
-/********************************* Custom Containers  ****************************************************/
+/*Biography container*/
+.custom-container-one{
+    background-color: rgba(5,20,61,255);
+    border-radius: 50px;
+    margin: auto;
+    margin-bottom: 250px;
+    margin-top: 250px;
+    box-shadow: -70px 100px 90px -60px rgb(10, 38, 118),  -55px -50px 50px -80px white/*#06c6e2*/inset;
+  /*  background: linear-gradient(right, #ffffff  0%, #ffffff 10%);*/
+   /*background: #020024;
+/*background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 
+    /*border-color: rgb(15, 143, 255);
+    border-style: ;*/
+}
 
-/* About Me Photos Container*/
-.custom-photos-container{
+/* About me Photos Container*/
+.custom-container-two{
     /*
   background: #05143D;
 background: linear-gradient(150deg, rgba(5, 20, 61, 1) 64%, rgba(8, 31, 94, 1) 79%, rgba(10, 38, 118, 1) 88%, rgba(10, 38, 118, 1) 97%);
@@ -114,59 +101,52 @@ background: rgba(5,20,61,255)/*#030c21*/;
 background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54%, rgba(8, 31, 94, 1) 79%, rgba(10, 38, 118, 1) 88%, rgba(10, 38, 118, 1) 97%);
 }
 
- /* About Me photos realignment*/
-.about-me-photos{
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allows items to wrap to the next line */
-    justify-content: center; /* Centers items horizontally */
-    gap: 20px; /* Space between items */
-    padding: 20px; /* Padding around the container */
-    max-width: 450px; /*Limit the width of the container */
-    max-height: 450px; /* Limit the height of the container */
-    margin: auto;
-    margin-top: 75px; /* Margin from the top */
-}
-/*rgba(5, 20, 61, 255)*/
-/*Contacts Container*/
-.custom-contacts-container {
-    background: rgb(10, 38, 118);
-    border-radius: 30px;
-    max-width: 800px;
-    margin: 80px auto;
-    text-align: center;
+/*Contacts*/
+
+.custom-container-three {
+    background-color: rgba(5, 20, 61, 255); /* Your existing background color */
+    border-radius: 30px; /* Slightly reduced border-radius for a more compact look */
+
+    /* Centering and Width Control */
+    max-width: 800px; /* Smaller max-width for the container (adjust as needed) */
+    margin: 80px auto; /* Significantly reduced vertical margins and horizontally centered */
+    /* If you want it closer to the exact screen center vertically, you could use a larger margin or flexbox on a parent.
+       '80px auto' pushes it from the top and bottom while centering horizontally. */
+
+    text-align: center; /* Centers inline content (like the h2) */
     box-shadow: -70px 100px 90px -60px rgb(10, 38, 118),
                 -55px -50px 50px -80px white inset;
 }
-/* Blue Buttons */
+/* 
+#contacts-padding{
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+ */
+
+ 
+
+/* Buttons */
  .btn-primary {
-
-    --bs-btn-bg: #123dc9; /* Base background color */
-    --bs-btn-border-color: #1137af; /* Base border color */
+    --bs-btn-bg: #123dc9;
+    --bs-btn-border-color: #1137af;
     --bs-btn-hover-bg: #14308d; /* A slightly darker shade for hover */
-    --bs-btn-hover-border-color: #1b4ef5; /* A slightly lighter shade for border hover */
-    border-width: 2px; 
-    --bs-btn-color: white;  /* Text color */
+    --bs-btn-hover-border-color: #1b4ef5;
+    border-width: 2px;
+    /* Don't forget text color if needed */
+    --bs-btn-color: white; 
 }
 
+/* h2 alignment*/
+.h2sections{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 120px;
+    padding: 20px;
 
-
-/***********************************  Biography   ********************************************/
-
-/*Biography container*/
-.custom-biography-container{
-    background-color: rgba(5,20,61,255);
-    border-radius: 50px;
-    margin: auto;
-    margin-bottom: 250px;
-    margin-top: 250px;
-    box-shadow: -70px 100px 90px -60px rgb(10, 38, 118),  -55px -50px 50px -80px white/*#06c6e2*/inset;
-    /*  background: linear-gradient(right, #ffffff  0%, #ffffff 10%);*/
-    /*background: #020024;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
-
-    /*border-color: rgb(15, 143, 255);
-    border-style: ;*/
 }
+
+/* Biography */
 
 /*small tweaks for bio*/
 #bio{
@@ -174,57 +154,220 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
     margin-top: 30px;
 }
 
-/* Biography text for name*/
 #name{
   font-family: 'vt323', sans-serif;
   font-weight: lighter;
 }
 
-/*Experience Section Container */
+/* Experience Section Container */
 .experience-section {
-    /* margin-left: 300px;  
-    margin-right: 300px;   */
-    /* margin-left: auto;   Centers the element horizontally */
-    /*margin-right: auto;  /* Centers the element horizontally */  
-    margin-top: 50px; 
-    margin-bottom: 50px; 
- 
-    /* Or for responsive website and consistent side margins: */
-    margin: 0 15%; /*DO NOT TOUCH for perfect centering, 0 top/bottom, 15% left/right, centers content better*/
-    max-width: 1200px; /* Optional: A max-width can help maintain readability on large screens*/
-    margin: 0 auto; /*DO NOT TOUCH for perfect centering, Combine with max-width for true centering and then add padding */
+    margin-left: 300px;  
+    margin-right: 300px; 
+    margin-top: 0;       
+    margin-bottom: 0;    
+    /* Or, if you want it to be responsive with consistent side margins: */
+    /* margin: 0 15%; /* 0 top/bottom, 15% left/right, centers content better */
+    /* max-width: 1200px; /* Optional: A max-width can help maintain readability on large screens */
+    /* margin: 0 auto; /* Combine with max-width for true centering and then add padding */
 
 
     /* Adjust padding for space *inside* the section */
     padding: 50px; /* Uniform padding all around the content inside experience-section */
-    padding-top: 50px;   /* Keep top padding for space above title */
-    padding-bottom: 50px;/* Keep bottom padding for space below content */
+    /* If you want less space above "Experience" title, reduce this padding-top */
+    /* padding-top: 50px; /* For example, reduce it from your original 100px */
+
+    background-color: rgba(30, 0, 50, 0.3); /* Custom semi-transparent background */
+    border-radius: 20px; /* Keep your border-radius */
+}
+
+/* Specific styling for the "Experience" title (h2) */
+.h2sections {
+    color: white; 
+    text-align: center; 
+    margin-top: 0;      
+    margin-bottom: 30px; 
+}
+
+
+/* Experience Section Container */
+.experience-section {
     /* Responsive Horizontal Spacing */
     /* On small screens (mobile-first), use smaller left/right padding */
     padding-left: 20px;
     padding-right: 20px;
+    /* Use margin-top/bottom for vertical spacing as needed */
+    margin-top: 0px; /* Example: space from element above */
+    margin-bottom: 50px; /* Example: space from element below */
+
+    /* For larger screens (md breakpoint and up), apply max-width and center it */
+    max-width: 1200px; /* Max width for the content area on large screens */
+    margin-left: auto;   /* Centers the element horizontally */
+    margin-right: auto;  /* Centers the element horizontally */
+
+    /* Adjust padding for space *inside* the section */
+    padding-top: 50px;   /* Keep top padding for space above title */
+    padding-bottom: 50px;/* Keep bottom padding for space below content */
+
 
     background-color: rgba(30, 0, 50, 0.3); /* Custom semi-transparent background */
-    border-radius: 20px; /* Keep your border-radius */  
+    border-radius: 20px; 
 }
 
+/* You might want to use Bootstrap's built-in container classes as well,
+   or integrate this custom CSS with them. If you add 'container' to
+   .experience-section, you could simplify the margin/max-width like so:
+   .experience-section.container {
+       padding-top: 50px;
+       padding-bottom: 50px;
+       background-color: rgba(30, 0, 50, 0.3);
+       border-radius: 20px;
+   }
+   and ensure this container is properly nested within the .all-experience div.
+*/
 
+
+/* Specific styling for the "Experience" title (h2) */
+.h2sections {
+    color: white;
+    text-align: center;
+    margin-top: 0;      /* Remove default margin-top from h2 */
+    margin-bottom: 30px; 
+}
+/*non-functional ternimal*/
+
+/* --- Terminal Navbar Styles (modified to be less conflicting) --- */
+/* --- Terminal Navbar Container (represents the whole window) --- */
+.terminal-navbar {
+    background-color: #000; /* Outer background, slightly darker than screen */
+    width: 100%;
+    /* Optional: Fixed position for a sticky navbar */
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
+    /* z-index: 1000; */
+    box-sizing: border-box;
+    padding-top: 0; /* Remove top padding to let window bar sit flush */
+    padding-bottom: 0; /* Remove bottom padding as terminal screen has its own */
+}
+
+/* --- New: Terminal Window Bar (the top bar with controls and title) --- */
+.terminal-window-bar {
+    background-color: #2c2c2c; /* Dark grey, slightly lighter than terminal screen */
+    color: #e0e0e0; /* Light text for title */
+    height: 30px; /* Fixed height for the bar */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center items */
+    padding: 0 10px; /* Horizontal padding inside the bar */
+    font-family: sans-serif; /* A more standard font for the title bar text */
+    font-size: 0.9em;
+    border-top-left-radius: 8px; /* Match outer container's top radius if applied */
+    border-top-right-radius: 8px; /* Match outer container's top radius if applied */
+    position: sticky; /* Sticky positioning for the bar within the navbar */
+    top: 0;
+    /* The image has the overall terminal window slightly rounded, so the bar should match. */
+    /* If .terminal-navbar has border-radius, apply it here for top corners. */
+    /* Example: border-top-left-radius: 5px; border-top-right-radius: 5px; */
+}
+
+.terminal-window-controls {
+    display: flex;
+    gap: 6px; /* Space between control buttons */
+    margin-right: 10px; /* Space between controls and title */
+}
+
+.control-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%; /* Make them circular */
+    cursor: default; /* Indicate non-interactable */
+    /* Adjust these colors to match the image's subtle grey controls */
+    background-color: #7d7d7d; /* Grey button color */
+    border: 1px solid #555; /* Subtle border for depth */
+}
+/* You can make them different colors if you want the Mac style */
+/* .close-btn { background-color: #ff5f56; } */
+/* .minimize-btn { background-color: #ffbd2e; } */
+/* .maximize-btn { background-color: #27c93f; } */
+
+
+.terminal-window-title {
+    flex-grow: 1; /* Allows title to take up available space and pushes menu icons to right */
+    text-align: center; /* Center the title text */
+    font-weight: bold;
+    color: #c0c0c0; /* Slightly lighter grey for the title */
+}
+/*
+.terminal-window-menu-icons {
+    /* Styles for hamburger menu icons or other controls on the right */
+    /*margin-left: 10px; Space from title */
+   /* color: #c0c0c0; /* Color for any icons */
+    /* Example for adding actual icons (requires icon library or SVG) */
+    /* span { width: 4px; height: 4px; background-color: currentColor; margin-left: 2px; } */
+
+
+
+/* --- Existing: Terminal Screen (now adjusted for layout) --- */
+/* --- Existing: Terminal Screen (adjusted padding) --- */
+
+.terminal-screen {
+    background-color: #0a0a0a;
+    border: 1px solid #1a1a1a;
+   /* border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;*/
+    margin: 0 auto;
+    margin-bottom: px;
+    max-width: 90%;
+    width: 500px;
+    height: 50px; /* Fixed height for the terminal screen */
+    /* Adjust padding to make the text go further left */
+    padding-top: 10px;    /* Keep top/bottom padding as is */
+    padding-bottom: 10px;
+    padding-left: 10px;   /* Changed from 20px to 10px to align with window bar */
+    padding-right: 20px;  /* Keep right padding as is, or adjust as needed */
+    /* A shorthand for the above would be: padding: 10px 20px 10px 10px; */
+
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+    font-family: 'VT323', monospace;
+}
+
+.terminal-prompt {
+    color:#00ffff;
+    font-size: x-large;
+    margin: auto;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-bottom: 30px;
+    /*background-color: #000;*/
+
+}
+
+.blinking-underscore {
+   
+    animation: blink-underscore 1s steps(1, end) infinite;
+}
+
+@keyframes blink-underscore {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
 
 /*experience*/
 /* Your .all-experience (the outer container with background image) */
-.experience-background-image {
+.all-experience {
     background-image:
         linear-gradient(#081F5E, rgba(0, 0, 0, .7)),
         url('Images/roboWallpaper2.jpg');
-    background-size: cover;           /* Use cover for full section coverage */
+
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: scroll;     /* Prevents fixed overlap */
+    background-attachment: fixed;
     background-color: #333;
     min-height: 400px;
-    width: 100%;
     box-shadow: inset 0 0 100px 50px #081F5E;
-    margin-bottom: 60px;              /* Add spacing below */
 }
 
 /* Card specific styles (adjusted for better contrast) */
@@ -262,87 +405,6 @@ background: linear-gradient(150deg, rgba(3, 12, 33, 1) 7%, rgba(5, 20, 61, 1) 54
     font-size: large;
 }
 
-/*********************   non-functional ternimal under experience header ***************************/
-
-/*Terminal Navbar Container (represents the whole window)*/
-.terminal-navbar {
-    background-color: #000; /* Outer background, slightly darker than screen */
-    width: 100%; /* Full width of the viewport */
-    box-sizing: border-box; /* Ensures padding/border are included in width */
-    padding-top: 0; /* Remove top padding to let window bar sit flush */
-    padding-bottom: 0; /* Remove bottom padding as terminal screen has its own */
-}
-
-/*New: Terminal Window Bar (the top bar with controls and title)*/
-.terminal-window-bar {
-    background-color: #2c2c2c; /* Dark grey, slightly lighter than terminal screen */
-    color: #e0e0e0; 
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Vertically center items */
-    padding: 0 10px; /* Horizontal padding inside the bar */
-    font-family: sans-serif; 
-    font-size: 0.9em; /* Slightly smaller font size for the title */
-    border-top-left-radius: 15px; /* Match outer container's top radius if applied */
-    border-top-right-radius: 15px; /* Match outer container's top radius if applied */
-}
-
-/*Terminal Window Title (centered) DON'T DELETE*/
-.terminal-window-title {
-    flex-grow: 1; /* Allows title to take up available space and pushes menu icons to right */
-    text-align: center; /* Center the title text */
-    font-weight: bold;
-    color: #c0c0c0; /* Slightly lighter grey for the title */
-}
-
-
-
-/* Terminal Screen (now adjusted for layout) */
-.terminal-screen {
-    background-color: #0a0a0a;
-    border: 1px solid #1a1a1a;
-   /* border-top: none;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;*/
-    margin: 0 auto;
-    margin-bottom: 50px;
-    max-width: 90%;
-    width: 500px;
-    height: 50px; 
-    /* Adjust padding to make the text go further left */
-    padding-top: 10px;    
-    padding-bottom: 10px;
-    padding-left: 10px;   
-    padding-right: 20px;  
-    /* A shorthand for the above would be: padding: 10px 20px 10px 10px; */
-
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
-    font-family: 'VT323', monospace;
-}
-/* Terminal Prompt Text (adjusted for layout) --- */
-.terminal-prompt {
-    color:#00ffff;
-    font-size: x-large;
-    margin: auto;
-    text-align: center; 
-    white-space: nowrap; /* Prevents text from wrapping */
-    overflow: hidden; /* Prevents text from wrapping */
-    padding-bottom: 30px;
-}
-
-/* Blinking Underscore Animation */
-.blinking-underscore {
-    animation: blink-underscore 1s steps(1, end) infinite; /* 1 second duration, steps for sharp blink, infinite loop */
-}
-
-/* Animation for blinking underscore */
-@keyframes blink-underscore {
-    0% { opacity: 1; } /* Start fully visible */
-    50% { opacity: 0; } /* Halfway through, make it invisible */
-    100% { opacity: 1; } /* End fully visible again */
-}
-
-
-
 
 /*rgba(5,35,108,0.3) maybe
 /*rgba(10, 38, 118, 0.3) maybe*/
@@ -359,8 +421,17 @@ body{
 .custom-card{
     background-color: transparent;
 }
-
-
+/*
+.border-shadow-left{
+		border-left: 1px solid #ffc412;
+		background: linear-gradient(left, #2f9de6  0%, #3601f5 10%);
+		background: -ms-linear-gradient(left, #d4cae7  0%,#fff 10%);
+		background: -moz-linear-gradient(left, #e0d2ee  0%,#a387b3 10%);
+		background: -webkit-linear-gradient(left, #eee  0%, #fff 10%);
+		box-shadow: -44px 120px 80px -72px #cdcae2 inset, -44px -120px 80px -72px #c7c0db inset;
+        min-height: 400px;
+}*/
+/*
 .custom-button{
       background-color: #06c6e2;
             /* You might also want to adjust text color for contrast */
@@ -372,7 +443,7 @@ body{
             /* display: inline-block; /* For links styled as buttons */
             /* cursor: pointer; */ 
 
-/****************************  Navbar   ************************************/
+/* Navbar */
 .my-custom-navbar{
     background-color: 0; /*maybe leave transparent*/
 }
@@ -400,6 +471,7 @@ body{
 
 }
 
+
 .navbar-nav .nav-link {
   color: #ebebeb;
   font-family: 'KernelPanic',sans-serif;
@@ -414,26 +486,27 @@ body{
 
 .center-intro{
     font-family:'GlitchSlap',sans-serif;
+    
+    /*font-size: larger;
+    font-weight:bolder;*/
 }
 
-
-/********************  Project Showcase Section  ********************/
+/*Project showcase section*/
+/* --- Project Showcase Section --- */
 
 .project-background-image {
-    background-image:
+ background-image:
         linear-gradient(#081F5E, rgba(0, 0, 0, .7)),
         url('Images/serverWallpaper.jpg');
-    background-size: cover;           /* Use cover for full section coverage */
+
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-color: #333;
     min-height: 400px;
-    width: 100%;
     box-shadow: inset 0 0 100px 50px #081F5E;
-    margin-bottom: 60px;
 }
-
 
 .project-showcase-section {
     background-image: rgba(5, 20, 61, 0.8); /* Slightly transparent background for the section */
@@ -463,6 +536,18 @@ body{
     overflow: hidden; /* Ensures content respects border-radius */
     padding: 30px; /* Internal padding for the carousel content */
 }
+
+.project-carousel-inner {
+    /* No specific styles needed here, it's handled by Bootstrap */
+}
+
+/* Broken Code
+.project-carousel-item {
+    padding: 20px; 
+    min-height: 400px;
+    display: flex !important; 
+    align-items: center; 
+} */
 
 .project-item-row {
     width: 100%; /* Ensure row takes full width of carousel item */
@@ -705,7 +790,7 @@ body{
         }
 
 
-/******************************** Imported Fonts *****************************/
+/* Imported Fonts */
 /* --- GlitchSlap Font --- */
 @font-face {
   font-family: 'GlitchSlap'; /* Unique name for this font */
@@ -769,5 +854,27 @@ body{
   font-display: swap;
 }
 
+/* --- Applying the Fonts --- */
+/* You need to decide WHICH font you want to apply to the div */
+/* Or apply different fonts to different elements */
 
+/*div {
+  /* Only ONE font-family property will be applied. The last one wins. */
+  /* If you want GlitchSlap to be the main font for all divs: */
+  /*font-family: 'KernelPanic', sans-serif;
+
+  /* If you wanted KernelPanic for *all* divs, you'd only list that: */
+  /* font-family: 'KernelPanic', sans-serif; */
+
+
+/* Examples of applying different fonts to different elements or classes: */
+.glitch-text {
+  font-family: 'GlitchSlap', sans-serif;
 }
+
+.electric-heading {
+  font-family: 'ElectricShocker', cursive; /* Using 'cursive' as a generic fallback */
+}
+/*
+#ElectricShocker p {
+  font-family: 'ElectricShocker', monospace; /* Using 'monospace' as a generic fallback */

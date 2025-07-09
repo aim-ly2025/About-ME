@@ -2,9 +2,9 @@ Paste the URL in the comments section when submitting the assignment. Also add t
 This project is pretty open-ended: the goal is for each of you to have a chance to explore all the options and features Bootstrap provides but make sure to include at least the following pieces of content (AKA HTML/content):
 
 An image of you with descriptive alt text
-ALMOST 1. 1-2 paragraph(s) about you/a bio
+DONE 1. 1-2 paragraph(s) about you/a bio
 
-DONE 2. 2+ skills, projects, or work experiences in a list (ordered, description, unordered, up to you!)
+ALMOST 2. 2+ skills, projects, or work experiences in a list (ordered, description, unordered, up to you!)
 
 DONE3. Add a link to your web app and IoT final project ( just put an empty link for the moment and use a hashtag (#) as a placeholder)
 
@@ -18,7 +18,7 @@ DONE 6. 1 imported font, e.g. from Google Fonts (hint: Intro to CSS slides about
 
 DONE 7. A background color on any element
 
-DONE 8. Adjust the size of an img (In the website background)
+8. Adjust the size of an img
 
 DONE 9.A use of Bootstrap’s grid layout system
 
